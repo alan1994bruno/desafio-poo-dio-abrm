@@ -1,62 +1,58 @@
 import br.com.dio.desafio.dominio.Bootcamp;
-import br.com.dio.desafio.dominio.Curso;
-import br.com.dio.desafio.dominio.Dev;
-import br.com.dio.desafio.dominio.Mentoria;
-
+import br.com.dio.desafio.dominio.Course;
+import br.com.dio.desafio.dominio.Developer;
+import br.com.dio.desafio.dominio.Mentorship;
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        Curso curso1 = new Curso();
-        curso1.setTitulo("curso java");
-        curso1.setDescricao("descrição curso java");
-        curso1.setCargaHoraria(8);
+        Course course1 = new Course();
+        course1.setTitle("curso java");
+        course1.setDescription("descrição curso java");
+        course1.setWorkloadDuration(8);
 
-        Curso curso2 = new Curso();
-        curso2.setTitulo("curso js");
-        curso2.setDescricao("descrição curso js");
-        curso2.setCargaHoraria(4);
+        Course course2 = new Course();
+        course2.setTitle("curso js");
+        course2.setDescription("descrição curso js");
+        course2.setWorkloadDuration(4);
 
-        Mentoria mentoria = new Mentoria();
-        mentoria.setTitulo("mentoria de java");
-        mentoria.setDescricao("descrição mentoria java");
-        mentoria.setData(LocalDate.now());
+        Mentorship mentoring = new Mentorship();
+        mentoring.setTitle("mentoria de java");
+        mentoring.setDescription("descrição mentoria java");
+        mentoring.setDate(LocalDate.now());
 
-        /*System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);*/
 
         Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("Bootcamp Java Developer");
-        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
-        bootcamp.getConteudos().add(curso1);
-        bootcamp.getConteudos().add(curso2);
-        bootcamp.getConteudos().add(mentoria);
+        bootcamp.setName("Bootcamp Java Developer");
+        bootcamp.setDescription("Descrição Bootcamp Java Developer");
+        bootcamp.getContents().add(course1);
+        bootcamp.getContents().add(course2);
+        bootcamp.getContents().add(mentoring);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        devCamila.progredir();
-        devCamila.progredir();
+        Developer devCamila = new Developer();
+        devCamila.setName("Camila");
+        devCamila.subscribeBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getContentsSubscribes());
+        devCamila.advanceStudy();
+        devCamila.advanceStudy();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getContentsSubscribes());
+        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getContentsFinished());
+        System.out.println("XP:" + devCamila.getTotalXP());
 
         System.out.println("-------");
 
-        Dev devJoao = new Dev();
-        devJoao.setNome("Joao");
-        devJoao.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
-        devJoao.progredir();
-        devJoao.progredir();
-        devJoao.progredir();
+        Developer devJoao = new Developer();
+        devJoao.setName("Joao");
+        devJoao.subscribeBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos João:" + devJoao.getContentsSubscribes());
+        devJoao.advanceStudy();
+        devJoao.advanceStudy();
+        devJoao.advanceStudy();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
-        System.out.println("XP:" + devJoao.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos João:" + devJoao.getContentsSubscribes());
+        System.out.println("Conteúdos Concluidos João:" + devJoao.getContentsFinished());
+        System.out.println("XP:" + devJoao.getTotalXP());
 
     }
 

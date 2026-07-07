@@ -4,8 +4,6 @@
 <p> Sejam bem-vindos ao desafio: <strong>APRENDENDO NA PRÁTICA O PARADIGMA DE ORIENTAÇÃO A OBJETOS.</strong><br>Desafio este que tive a honra de co-criar com a plataforma de cursos online <strong><a href="https://web.digitalinnovation.one/">DIGITAL INNOVATION ONE</a></strong> 💛🧡 e disponibilizado de forma gratuita para a comunidade dos desenvolvedores Java.<br>
     💎 O objetivo principal é colocar em prática umas das principais ferramentas da OO: <strong>ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO,</strong> através de um projeto Java. </p>
 
-
-
 <h2>🛑 Pré-Requisitos</h2>
 
 <p>
@@ -15,7 +13,6 @@
 ✅ Git<br>
 ✅ Conta no GitHub<br>
 </p>
-
 
 <h2> 👣 Passo-a-Passo</h2>
 
@@ -27,7 +24,7 @@
 <strong>	5.</strong> E para representar CLASSES que foram criadas e relacionadas, iremos transforma-las em OBJETOS<br>
 </p>
 
-----
+---
 
 <h2> 📚 Paradigma de Programação Orientado a Objetos (POO) </h2>
 
@@ -36,7 +33,6 @@ A visão de Orientação a Objetos (OO) é aquela de um mundo de objetos que int
 Este paradigma é um modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre classes, atributos, métodos, objetos, entre outros.<br>
 São 4 os pilares principais do POO: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO. 
 </p>
-
 
 <h3>🔺 ABSTRAÇÃO:</h3>
 
@@ -64,7 +60,7 @@ Domínio da aplicação, também conhecida como camada de negócio ou de objetos
 Um elemento do código que tem a função de representar objetos do mundo real. Dentro dela é comum declararmos atributos e métodos, que representam, respectivamente, as características e comportamentos desse objeto.
 
 <h3>🔻 ATRIBUTO: </h3>
-Atributos são, basicamente, a estrutura de dados que vai representar a classe. Os atributos também são conhecidos como VARIÁVEL DE CLASSE, e podem ser divididos em dois tipos básicos: atributos de instância e de classe. 
+Atributos são, basicamente, a estrutura de dados que vai representar a classe. Os atributos também são conhecidos como VARIÁVEL DE CLASSE, e podem ser divididos em dois tipos básicos: atributos de instância e de classe.
 
 <h3>🔻 VARIÁVEL: </h3>
 Uma “região de memória (do computador) previamente identificada cuja finalidade é armazenar os dados ou informações de um programa por um determinado espaço de tempo”.
@@ -74,7 +70,7 @@ Os métodos representam os estados e ações dos objetos e classes.
 
 <h3>🔻 OBJETO: </h3>
 Em POO, objeto é um "molde" de uma determinada classe, que passa a existir a partir de uma instância da classe. A classe define o comportamento do objeto, usando atributos (propriedades) e métodos (ações).
-Objeto em ciência da computação, é uma referência a um local da memória que possui um valor. Um objeto pode ser uma variável, função, ou estrutura de dados. 
+Objeto em ciência da computação, é uma referência a um local da memória que possui um valor. Um objeto pode ser uma variável, função, ou estrutura de dados.
 
 <h3>🔻 INSTÂNCIA: </h3>
 Uma instância de uma classe é um novo objeto criado dessa classe, com o operador new. Instanciar uma classe é criar um novo objeto do mesmo tipo dessa classe. Uma classe somente poderá ser utilizada após ser instanciada.
@@ -111,8 +107,7 @@ Linguagens compiladas: C, C++, Pascal, D, GO, etc.<br>
 Linguagens Interpretadas: Python, Ruby, PHP, Javascript, etc.<br>
 Linguagens Hibridas: Java, Erlang, Elixir, etc.<br>
 
-
-<h3> ✨ PARADIGMA DE LINGUAGEM DE PROGRAMAÇÃO</h3> 
+<h3> ✨ PARADIGMA DE LINGUAGEM DE PROGRAMAÇÃO</h3>
 
 É um conjunto de características que podem ser utilizados para categorizar determinado grupo de linguagens. Um paradigma pode oferecer técnicas apropriadas para uma aplicação específica.<br>
 <br>
@@ -122,9 +117,9 @@ Linguagens Hibridas: Java, Erlang, Elixir, etc.<br>
 Neste paradigma, o programa descreve o processamento necessário para solucionar o problema. Assim, o paradigma imperativo é caracterizado por execução sequencial de instruções, pelo uso de variáveis que representam posições de memória e pelo uso de instruções de atribuição que alteram os valores dessas variáveis.<br>
 Vejamos alguns Subparadigmas do Paradigma Imperativo e exemplos linguagens de programação que adotam esses subparadigmas.<br>
 <br>
-🔸  1.1 Paradigma estruturado:  ALGOL 58 e ALGOL 60 <br>
-🔸  1.2 Paradigma concorrente: Java e Ada<br>
-🔸  1.3 Paradigma Orientado a Objetos: Smalltalk e Java<br>
+🔸 1.1 Paradigma estruturado: ALGOL 58 e ALGOL 60 <br>
+🔸 1.2 Paradigma concorrente: Java e Ada<br>
+🔸 1.3 Paradigma Orientado a Objetos: Smalltalk e Java<br>
 <br>
 🔹 <strong>2. Paradigma Declarativo</strong><br>
 Este paradigma é o modelo no qual os resultados são descritos, mas os passos para chegar aos resultados não são estabelecidos.<br>
@@ -132,6 +127,7 @@ Vejamos alguns Subparadigmas do Paradigma Declarativo e exemplos linguagens de p
 <br>
 🔹 2.1 Paradigma Funcional: Lisp e Haskell<br>
 🔹 2.2 Paradigma Lógico: Prolog<br>
+
 </p>
 
 <h2> 🤝 Contribuindo </h2>
@@ -145,8 +141,109 @@ Se possível:<br>
 🐛 Encontrar e relatar issues<br>
 </p>
 
-
-
-------------
+---
 
 Disponibilizado com ♥ por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la").
+
+# Desafio POO DIO - Versão Refatorada por Álan Bruno Rios Miguel
+
+Projeto desenvolvido a partir do desafio **"Aprenda na Prática Programação Orientada a Objetos"** da DIO, com foco em praticar os principais pilares da Programação Orientada a Objetos em Java.
+
+Nesta versão, além da implementação original do desafio, foram aplicadas melhorias de organização, legibilidade e padronização do código.
+
+## Objetivo do projeto
+
+Modelar o domínio de um **bootcamp**, seus conteúdos e os desenvolvedores inscritos, aplicando conceitos como:
+
+- Abstração
+- Encapsulamento
+- Herança
+- Polimorfismo
+
+## Estrutura do domínio
+
+O projeto trabalha com as seguintes entidades principais:
+
+- `Bootcamp`
+- `Content`
+- `Course`
+- `Mentorship`
+- `Developer`
+
+Essas classes representam o fluxo principal do desafio: criação de conteúdos, inscrição em bootcamp, progresso nos estudos e acúmulo de XP.
+
+## Melhorias aplicadas
+
+Durante a revisão do projeto, foram feitas as seguintes melhorias:
+
+### 1. Padronização parcial para inglês
+
+Foi iniciada a refatoração da nomenclatura para um padrão mais internacional, deixando o código mais próximo de convenções usadas em projetos profissionais.
+
+Exemplos de ajustes:
+
+- `Course`
+- `Content`
+- `Mentorship`
+- `Developer`
+- `name`
+- `description`
+- `date`
+
+### 2. Uso de Lombok
+
+Foi adicionada a biblioteca **Lombok** para reduzir código repetitivo, especialmente em:
+
+- Getters
+- Setters
+
+Com isso, as classes ficaram mais limpas e objetivas.
+
+### 3. Proteção de atributo de regra de negócio
+
+O atributo responsável pelo XP total do desenvolvedor passou a não expor setter público, evitando alteração indevida fora da lógica da aplicação.
+
+Exemplo aplicado:
+
+```java
+@Setter(AccessLevel.NONE)
+private double totalXP;
+```
+
+### 4. Código funcional preservado
+
+Mesmo com as alterações, o comportamento principal do desafio foi mantido:
+
+- criação de cursos e mentorias;
+- criação do bootcamp;
+- inscrição de desenvolvedores;
+- avanço no conteúdo;
+- cálculo/acúmulo de XP.
+
+## Fluxo executado no `Main`
+
+A classe `Main` demonstra o funcionamento do projeto na prática:
+
+1. Criação de conteúdos (`Course` e `Mentorship`)
+2. Associação dos conteúdos ao `Bootcamp`
+3. Inscrição de desenvolvedores no bootcamp
+4. Progressão nos estudos
+5. Exibição dos conteúdos inscritos, concluídos e XP total
+
+## Tecnologias utilizadas
+
+- Java
+- IntelliJ IDEA
+- Lombok
+
+## Observações
+
+A refatoração foi feita com cuidado para **não descaracterizar a proposta original do desafio**, mas sim melhorar sua apresentação, manutenção e legibilidade.
+
+Ainda existem pontos que podem ser refinados futuramente, como a padronização completa dos nomes e pequenos ajustes semânticos, mas o projeto já se encontra funcional e consistente para entrega.
+
+## Status
+
+✅ Desafio funcionalmente concluído  
+✅ Código revisado e melhorado  
+✅ Refatoração iniciada com foco em legibilidade e padronização
